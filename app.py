@@ -23,7 +23,7 @@ def preprocess_image(image):
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('RGB')
-    st.image(image, caption='Uploaded image', use_column_width=400)
+    st.image(image, caption='Uploaded image', width=400)
 
     preprocessed_image = preprocess_image(image)
 
